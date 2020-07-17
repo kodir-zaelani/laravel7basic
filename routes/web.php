@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/','SampleController@index')->name('home');
+
+Route::post('/store', 'SampleController@store')->name('store');
+Route::get('/mail', 'SampleController@mail')->name('mail');
+Route::get('/emails', 'SampleController@emails')->name('emails');
+Route::get('/checkemails', 'SampleController@checkemails')->name('checkemails');
+
+Route::Resource('/users', 'UserController');
+
+
+

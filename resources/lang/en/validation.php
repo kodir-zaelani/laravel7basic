@@ -128,10 +128,15 @@ return [
     | specify a specific custom language line for a given attribute rule.
     |
     */
-
+    // Pesan custome 
+    // Misal untuk field email
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'email' => [
+            'required' => 'We need your email',
+            'email' => 'We need validate email',
+        ],
+        'description' => [
+            'required' => 'We need your description',
         ],
     ],
 
